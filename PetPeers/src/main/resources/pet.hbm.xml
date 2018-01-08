@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.org.model.Pet" table="pets">
+		<id name="id" type="long">
+			<column name="id" length="5" />
+			<generator class="assigned" /> 
+		</id>
+		<property name="name" type="string">
+			<column name="pet_name" length="20" not-null="true" />
+		</property>
+		<property name="age" type="int">
+			<column name="pet_age" length="10" not-null="true" />
+		</property>
+		<property name="place" type="string">
+			<column name="pet_place" length="20" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

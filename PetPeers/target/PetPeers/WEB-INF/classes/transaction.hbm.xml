@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="buypojo" table="pet_transactions">
+		<id name="tid" type="long" column="TRN_ID" />
+		<property name="ptype" column="PET_type" type="string" />
+		<property name="cid" column="OWNER_ID" type="long" />
+		<property name="pqty" column="PUR_QTY" type="int" />
+		<property name="pdate" column="PUR_DATE" type="date" />
+	</class>
+</hibernate-mapping>
